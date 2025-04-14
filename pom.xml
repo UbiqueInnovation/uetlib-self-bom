@@ -55,18 +55,8 @@
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
-                <artifactId>uetlib-rust-crypto</artifactId>
-                <version>0.0.1</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-rust-crypto-jvm</artifactId>
                 <version>0.1.3</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.ubique</groupId>
-                <artifactId>uetlib-rust-qrcode</artifactId>
-                <version>0.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
