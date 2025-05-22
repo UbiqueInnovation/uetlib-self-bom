@@ -108,6 +108,12 @@
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-spring-boot-test</artifactId>
+                <version>1.0.0</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-testcontainers</artifactId>
                 <version>1.0.0</version>
                 <scope>test</scope>
