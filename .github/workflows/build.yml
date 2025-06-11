@@ -18,3 +18,57 @@ jobs:
       artifactory_password: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
       artifactory_url: ${{ secrets.UB_ARTIFACTORY_URL }}
       artifactory_repo: ${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
+
+  test-version-bump:
+    name: Test Version Bump
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repository:
+          - uetlib-job-testapp
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Create custom artifactory settings.xml
+        uses: whelk-io/maven-settings-xml-action@9dc09b23833fa9aa7f27b63db287951856f3433d
+        with:
+          servers: '[{"id": "ubique-artifactory", "username": "${{ secrets.UB_ARTIFACTORY_USER }}", "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"}]'
+          repositories: '[{"id" : "ubique-artifactory", "url" : "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}"}]'
+
+      - name: Build with Maven
+        run: mvn --batch-mode --update-snapshots install
+
+      - name: Checkout ${{ matrix.repository }}
+        uses: actions/checkout@v4
+        with:
+          repository: UbiqueInnovation/${{ matrix.repository }}
+          path: ${{ matrix.repository }}
+          token: ${{ secrets.WORKFLOW_PAT_GITHUB }}
+          ref: main
+
+      - name: Bump Parent Version for package ${{ matrix.repository }}
+        run: mvn versions:update-parent -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+
+      - name: Build ${{ matrix.repository }} with Maven
+        run: mvn --batch-mode --update-snapshots install -f ${{ matrix.repository }}/pom.xml
+
+  code-quality:
+    name: Code Analysis (Sonar Cloud)
+    uses: UbiqueInnovation/workflows-backend/.github/workflows/mvn_verify_sonar.yml@main
+    with:
+      ref_name: ${{ github.ref_name }}
+      parent_pom: pom.xml
+    secrets:
+      artifactory_user: ${{ secrets.UB_ARTIFACTORY_USER }}
+      artifactory_password: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
+      artifactory_url: ${{ secrets.UB_ARTIFACTORY_URL }}
+      artifactory_repo: ${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
+      sonar_token: ${{ secrets.UBIQUE_SONAR_TOKEN }}
