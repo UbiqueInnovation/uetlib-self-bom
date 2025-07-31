@@ -28,7 +28,7 @@ jobs:
         repository:
           - uetlib-job-testapp
     steps:
-      - name: Checkout repository
+      - name: Checkout uetlib-self-bom repository
         uses: actions/checkout@v4
 
       - name: Set up JDK
@@ -40,11 +40,30 @@ jobs:
       - name: Create custom artifactory settings.xml
         uses: whelk-io/maven-settings-xml-action@9dc09b23833fa9aa7f27b63db287951856f3433d
         with:
-          servers: '[{"id": "ubique-artifactory", "username": "${{ secrets.UB_ARTIFACTORY_USER }}", "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"}]'
-          repositories: '[{"id" : "ubique-artifactory", "url" : "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}"}]'
+          servers: |
+            [
+              {
+                "id": "ubique-artifactory",
+                "username": "${{ secrets.UB_ARTIFACTORY_USER }}",
+                "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"
+              }
+            ]
+          repositories: |
+            [
+              {
+                "id": "ubique-artifactory",
+                "url": "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}"
+              }
+            ]
 
-      - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots install
+      - name: Build uetlib-self-bom
+        run: mvn --batch-mode --settings ~/.m2/settings.xml install -DskipTests
+
+      - name: Get uetlib-self-bom version
+        id: get_version
+        run: |
+          VERSION=$(mvn --settings ~/.m2/settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "BOM_VERSION=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Checkout ${{ matrix.repository }}
         uses: actions/checkout@v4
@@ -54,11 +73,12 @@ jobs:
           token: ${{ secrets.WORKFLOW_PAT_GITHUB }}
           ref: main
 
-      - name: Bump Parent Version for package ${{ matrix.repository }}
-        run: mvn versions:update-parent -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+      - name: Update uetlib-self-bom version for ${{ matrix.repository }}
+        run: |
+          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.BOM_VERSION }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
 
       - name: Build ${{ matrix.repository }} with Maven
-        run: mvn --batch-mode --update-snapshots install -f ${{ matrix.repository }}/pom.xml
+        run: mvn --batch-mode --settings ~/.m2/settings.xml --update-snapshots install -f ${{ matrix.repository }}/pom.xml
 
   code-quality:
     name: Code Analysis (Sonar Cloud)
