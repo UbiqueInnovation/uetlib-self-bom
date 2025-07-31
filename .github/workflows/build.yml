@@ -22,6 +22,7 @@ jobs:
   test-version-bump:
     name: Test Version Bump
     runs-on: ubuntu-latest
+    needs: build
     strategy:
       fail-fast: false
       matrix:
@@ -43,8 +44,11 @@ jobs:
           servers: '[{"id": "ubique-artifactory", "username": "${{ secrets.UB_ARTIFACTORY_USER }}", "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"}]'
           repositories: '[{"id" : "ubique-artifactory", "url" : "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}"}]'
 
-      - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots install
+      - name: Get uetlib-self-bom version
+        id: get_version
+        run: |
+          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "BOM_VERSION=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Checkout ${{ matrix.repository }}
         uses: actions/checkout@v4
@@ -54,8 +58,9 @@ jobs:
           token: ${{ secrets.WORKFLOW_PAT_GITHUB }}
           ref: main
 
-      - name: Bump Parent Version for package ${{ matrix.repository }}
-        run: mvn versions:update-parent -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+      - name: Update uetlib-self-bom version for ${{ matrix.repository }}
+        run: |
+          mvn versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.BOM_VERSION }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
 
       - name: Build ${{ matrix.repository }} with Maven
         run: mvn --batch-mode --update-snapshots install -f ${{ matrix.repository }}/pom.xml
