@@ -57,12 +57,12 @@ jobs:
             ]
 
       - name: Build uetlib-self-bom
-        run: mvn --batch-mode --settings .m2/settings.xml install -DskipTests
+        run: mvn --batch-mode --settings ~/.m2/settings.xml install -DskipTests
 
       - name: Get uetlib-self-bom version
         id: get_version
         run: |
-          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          VERSION=$(mvn --settings ~/.m2/settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout)
           echo "BOM_VERSION=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Checkout ${{ matrix.repository }}
@@ -75,10 +75,10 @@ jobs:
 
       - name: Update uetlib-self-bom version for ${{ matrix.repository }}
         run: |
-          mvn versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.BOM_VERSION }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.BOM_VERSION }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
 
       - name: Build ${{ matrix.repository }} with Maven
-        run: mvn --batch-mode --update-snapshots install -f ${{ matrix.repository }}/pom.xml
+        run: mvn --batch-mode --settings ~/.m2/settings.xml --update-snapshots install -f ${{ matrix.repository }}/pom.xml
 
   code-quality:
     name: Code Analysis (Sonar Cloud)
