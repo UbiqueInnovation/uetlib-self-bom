@@ -76,22 +76,22 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot</artifactId>
-                <version>1.4.3</version>
+                <version>1.4.4</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-problem</artifactId>
-                <version>1.4.3</version>
+                <version>1.4.4</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
-                <version>1.4.3</version>
+                <version>1.4.4</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-validation</artifactId>
-                <version>1.4.3</version>
+                <version>1.4.4</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
