@@ -15,6 +15,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <uetlib-geo.version>1.1.2</uetlib-geo.version>
+        <uetlib-spring-cloud.version>1.2.1</uetlib-spring-cloud.version>
+        <uetlib-spring-boot.version>1.4.4</uetlib-spring-boot.version>
+        <uetlib-testcontainers.version>1.2.0</uetlib-testcontainers.version>
+
         <!-- Sonar & Jacoco coverage reports -->
         <sonar.coverage.module>uetlib-self-bom</sonar.coverage.module>
         <sonar.coverage.jacoco.xmlReportPaths>
@@ -41,17 +46,17 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-geo</artifactId>
-                <version>1.1.2</version>
+                <version>${uetlib-geo.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-geo-db</artifactId>
-                <version>1.1.2</version>
+                <version>${uetlib-geo.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-geo-job</artifactId>
-                <version>1.1.2</version>
+                <version>${uetlib-geo.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
@@ -76,32 +81,32 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot</artifactId>
-                <version>1.4.4</version>
+                <version>${uetlib-spring-boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-problem</artifactId>
-                <version>1.4.4</version>
+                <version>${uetlib-spring-boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
-                <version>1.4.4</version>
+                <version>${uetlib-spring-boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-validation</artifactId>
-                <version>1.4.4</version>
+                <version>${uetlib-spring-boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-cloud</artifactId>
-                <version>1.2.1</version>
+                <version>${uetlib-spring-cloud.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-cloud-security</artifactId>
-                <version>1.2.1</version>
+                <version>${uetlib-spring-cloud.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
@@ -130,31 +135,43 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-testcontainers</artifactId>
-                <version>1.1.0</version>
+                <version>${uetlib-testcontainers.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-testcontainers-mariadb</artifactId>
-                <version>1.1.0</version>
+                <version>${uetlib-testcontainers.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-testcontainers-mongodb</artifactId>
-                <version>1.1.0</version>
+                <version>${uetlib-testcontainers.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-testcontainers-mysql</artifactId>
-                <version>1.1.0</version>
+                <version>${uetlib-testcontainers.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-testcontainers-postgresql</artifactId>
-                <version>1.1.0</version>
+                <version>${uetlib-testcontainers.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-testcontainers-influxdb</artifactId>
+                <version>${uetlib-testcontainers.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-testcontainers-redis</artifactId>
+                <version>${uetlib-testcontainers.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
