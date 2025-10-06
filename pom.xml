@@ -17,7 +17,7 @@
 
         <uetlib-geo.version>1.1.2</uetlib-geo.version>
         <uetlib-spring-cloud.version>1.2.1</uetlib-spring-cloud.version>
-        <uetlib-spring-boot.version>1.4.7</uetlib-spring-boot.version>
+        <uetlib-spring-boot.version>1.4.8</uetlib-spring-boot.version>
         <uetlib-testcontainers.version>1.2.0</uetlib-testcontainers.version>
 
         <!-- Sonar & Jacoco coverage reports -->
