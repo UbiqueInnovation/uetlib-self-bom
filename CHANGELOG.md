@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2.0.0
+
+- `uetlib-job:2.0.0`
+
+### Breaking changes
+
+- [uetlib-job CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md)
+
 ## 1.2.0
 
 ### Improvements
