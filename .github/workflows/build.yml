@@ -34,7 +34,6 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v5
         with:
-          java-version: '21'
           distribution: 'temurin'
 
       - name: Create custom artifactory settings.xml
