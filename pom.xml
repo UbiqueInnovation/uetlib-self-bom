@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <uetlib-geo.version>1.1.9</uetlib-geo.version>
+        <uetlib-geo.version>1.1.10</uetlib-geo.version>
         <uetlib-spring-cloud.version>1.2.1</uetlib-spring-cloud.version>
         <uetlib-spring-boot.version>1.7.2</uetlib-spring-boot.version>
         <uetlib-testcontainers.version>1.2.1</uetlib-testcontainers.version>
