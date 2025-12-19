@@ -1,23 +1,31 @@
 name: Build
 on:
   push:
-    branches:
-      - '**'
-    tags-ignore:
-      - v*
+    branches: [ '**' ]
+    tags-ignore: [ v* ]
 
 jobs:
   build:
     name: Build Project
-    uses: UbiqueInnovation/workflows-backend/.github/workflows/mvn_install.yml@main
-    with:
-      ref_name: ${{ github.ref_name }}
-      parent_pom: pom.xml
-    secrets:
-      artifactory_user: ${{ secrets.UB_ARTIFACTORY_USER }}
-      artifactory_password: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
-      artifactory_url: ${{ secrets.UB_ARTIFACTORY_URL }}
-      artifactory_repo: ${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Prepare maven
+        uses: UbiqueInnovation/action-systems-mvn-prepare@v1.0.1
+        with:
+          mvn_repository_id: ubique-artifactory
+          mvn_repository_user: ${{ secrets.UB_ARTIFACTORY_USER }}
+          mvn_repository_password: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
+          mvn_repository_url: ${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
+
+      - name: Maven Install
+        uses: UbiqueInnovation/action-systems-mvn-install@v0.1.5
+        with:
+          parent_pom: pom.xml
 
   test-version-bump:
     name: Test Version Bump
@@ -31,10 +39,13 @@ jobs:
       - name: Checkout uetlib-self-bom repository
         uses: actions/checkout@v6
 
-      - name: Set up JDK
-        uses: actions/setup-java@v5
+      - name: Prepare maven
+        uses: UbiqueInnovation/action-systems-mvn-prepare@v1.0.1
         with:
-          distribution: 'temurin'
+          mvn_repository_id: ubique-artifactory
+          mvn_repository_user: ${{ secrets.UB_ARTIFACTORY_USER }}
+          mvn_repository_password: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
+          mvn_repository_url: ${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
 
       - name: Create custom artifactory settings.xml
         uses: whelk-io/maven-settings-xml-action@9dc09b23833fa9aa7f27b63db287951856f3433d
@@ -55,14 +66,17 @@ jobs:
               }
             ]
 
-      - name: Build uetlib-self-bom
-        run: mvn --batch-mode --settings ~/.m2/settings.xml install -DskipTests
+      - name: Maven Install
+        uses: UbiqueInnovation/action-systems-mvn-install@v0.1.5
+        with:
+          parent_pom: pom.xml
 
-      - name: Get uetlib-self-bom version
-        id: get_version
-        run: |
-          VERSION=$(mvn --settings ~/.m2/settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout)
-          echo "BOM_VERSION=$VERSION" >> $GITHUB_OUTPUT
+      - name: Maven set versions (and get version from output)
+        id: set_and_get_version
+        uses: UbiqueInnovation/action-systems-mvn-versions-set@v1.1.0-alpha.1
+        with:
+          ref_name: ${{ github.ref_name }}
+          parent_pom: pom.xml
 
       - name: Checkout ${{ matrix.repository }}
         uses: actions/checkout@v6
@@ -74,20 +88,7 @@ jobs:
 
       - name: Update uetlib-self-bom version for ${{ matrix.repository }}
         run: |
-          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.BOM_VERSION }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.set_and_get_version.outputs.mvn_artifact_version }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
 
       - name: Build ${{ matrix.repository }} with Maven
         run: mvn --batch-mode --settings ~/.m2/settings.xml --update-snapshots install -f ${{ matrix.repository }}/pom.xml
-
-  code-quality:
-    name: Code Analysis (Sonar Cloud)
-    uses: UbiqueInnovation/workflows-backend/.github/workflows/mvn_verify_sonar.yml@main
-    with:
-      ref_name: ${{ github.ref_name }}
-      parent_pom: pom.xml
-    secrets:
-      artifactory_user: ${{ secrets.UB_ARTIFACTORY_USER }}
-      artifactory_password: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
-      artifactory_url: ${{ secrets.UB_ARTIFACTORY_URL }}
-      artifactory_repo: ${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
-      sonar_token: ${{ secrets.UBIQUE_SONAR_TOKEN }}
