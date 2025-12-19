@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 2026.0.0
+
+### Improvements
+
+- Support for Spring Boot 4
+- Java 25
+
+### Breaking changes
+
+- Removed module uetlib-spring-boot-problem (together with
+  zalando/problem) [uetlib-spring-boot CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md)
+
 ## 2.0.0
 
 - `uetlib-job:2.0.0`
