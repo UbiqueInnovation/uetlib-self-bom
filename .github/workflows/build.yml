@@ -66,17 +66,14 @@ jobs:
               }
             ]
 
-      - name: Maven Install
-        uses: UbiqueInnovation/action-systems-mvn-install@v0.1.5
-        with:
-          parent_pom: pom.xml
+      - name: Build uetlib-self-bom
+        run: mvn --batch-mode --settings ~/.m2/settings.xml install -DskipTests
 
-      - name: Maven set versions (and get version from output)
-        id: set_and_get_version
-        uses: UbiqueInnovation/action-systems-mvn-versions-set@v1.1.0-alpha.1
-        with:
-          ref_name: ${{ github.ref_name }}
-          parent_pom: pom.xml
+      - name: Get uetlib-self-bom version
+        id: get_version
+        run: |
+          VERSION=$(mvn --settings ~/.m2/settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "self_bom_version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Checkout ${{ matrix.repository }}
         uses: actions/checkout@v6
@@ -88,7 +85,7 @@ jobs:
 
       - name: Update uetlib-self-bom version for ${{ matrix.repository }}
         run: |
-          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.set_and_get_version.outputs.mvn_artifact_version }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.self_bom_version }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
 
       - name: Build ${{ matrix.repository }} with Maven
         run: mvn --batch-mode --settings ~/.m2/settings.xml --update-snapshots install -f ${{ matrix.repository }}/pom.xml
