@@ -5,7 +5,6 @@
 - Support for Spring Boot 4
 - Java 25
 - `uetlib-job:3.x`
-- `uetlib-geo*:1.x`
 - `2.x` for all other modules
 
 ### Breaking changes
