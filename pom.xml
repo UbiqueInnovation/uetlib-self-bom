@@ -15,9 +15,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <uetlib-geo.version>2.0.0-alpha.3</uetlib-geo.version>
+        <uetlib-geo.version>2.0.0-alpha.4</uetlib-geo.version>
         <uetlib-spring-cloud.version>2.0.0-alpha.2</uetlib-spring-cloud.version>
-        <uetlib-spring-boot.version>2.0.0-alpha.9</uetlib-spring-boot.version>
+        <uetlib-spring-boot.version>2.0.0-alpha.11</uetlib-spring-boot.version>
         <uetlib-testcontainers.version>2.0.0-alpha.2</uetlib-testcontainers.version>
 
         <!-- Sonar & Jacoco coverage reports -->
@@ -124,7 +124,7 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-test</artifactId>
-                <version>2.0.0-alpha.1</version>
+                <version>2.0.0-alpha.3</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
