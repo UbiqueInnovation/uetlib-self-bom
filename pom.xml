@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <uetlib-geo.version>2.0.0-alpha.2</uetlib-geo.version>
+        <uetlib-geo.version>2.0.0-alpha.3</uetlib-geo.version>
         <uetlib-spring-cloud.version>2.0.0-alpha.2</uetlib-spring-cloud.version>
         <uetlib-spring-boot.version>2.0.0-alpha.9</uetlib-spring-boot.version>
         <uetlib-testcontainers.version>2.0.0-alpha.2</uetlib-testcontainers.version>
@@ -36,7 +36,7 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-core</artifactId>
-                <version>2.0.0-alpha.6</version>
+                <version>2.0.0-alpha.7</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
