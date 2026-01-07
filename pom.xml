@@ -85,6 +85,11 @@
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-spring-boot-validation</artifactId>
+                <version>${uetlib-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
                 <version>${uetlib-spring-boot.version}</version>
             </dependency>
