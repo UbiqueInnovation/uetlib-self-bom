@@ -17,7 +17,7 @@
 
         <uetlib-geo.version>2.0.0-alpha.4</uetlib-geo.version>
         <uetlib-spring-cloud.version>2.0.0-alpha.2</uetlib-spring-cloud.version>
-        <uetlib-spring-boot.version>2.0.0-alpha.20</uetlib-spring-boot.version>
+        <uetlib-spring-boot.version>2.0.0-alpha.21</uetlib-spring-boot.version>
         <uetlib-testcontainers.version>2.0.0-alpha.2</uetlib-testcontainers.version>
 
         <!-- Sonar & Jacoco coverage reports -->
