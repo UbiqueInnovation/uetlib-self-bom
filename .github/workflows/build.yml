@@ -47,22 +47,23 @@ jobs:
           mvn_repository_password: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
           mvn_repository_url: ${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
 
-      - name: Create custom artifactory settings.xml
-        uses: whelk-io/maven-settings-xml-action@9dc09b23833fa9aa7f27b63db287951856f3433d
+      - name: Create custom mvn repository settings.xml
+        uses: s4u/maven-settings-action@894661b3ddae382f1ae8edbeab60987e08cf0788 # v4.0.0
         with:
-          servers: |
+          githubServer: false
+          servers: >-
             [
               {
-                "id": "ubique-artifactory",
-                "username": "${{ secrets.UB_ARTIFACTORY_USER }}",
-                "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"
+                "id": "${{ inputs.mvn_repository_id }}",
+                "username": "${{ inputs.mvn_repository_user }}",
+                "password": "${{ inputs.mvn_repository_password }}"
               }
             ]
-          repositories: |
+          repositories: >-
             [
               {
-                "id": "ubique-artifactory",
-                "url": "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}"
+                "id": "${{ inputs.mvn_repository_id }}",
+                "url": "${{ inputs.mvn_repository_url }}"
               }
             ]
 
