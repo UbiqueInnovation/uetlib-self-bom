@@ -15,10 +15,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <uetlib-geo.version>2.0.0-SNAPSHOT</uetlib-geo.version>
+        <uetlib-test.version>2.0.0-alpha.3</uetlib-test.version>
+        <uetlib-testcontainers.version>2.0.0-alpha.2</uetlib-testcontainers.version>
+        <uetlib-core.version>2.0.0-alpha.17</uetlib-core.version>
+        <uetlib-storage.version>2.0.0-alpha.5</uetlib-storage.version>
+        <uetlib-db.version>2.0.0-alpha.2</uetlib-db.version>
+        <uetlib-geo.version>2.0.0-alpha.5</uetlib-geo.version>
         <uetlib-spring-cloud.version>2.0.0-alpha.2</uetlib-spring-cloud.version>
         <uetlib-spring-boot.version>2.0.0-alpha.29</uetlib-spring-boot.version>
-        <uetlib-testcontainers.version>2.0.0-alpha.2</uetlib-testcontainers.version>
+        <uetlib-spring-boot-test.version>2.0.0-alpha.4</uetlib-spring-boot-test.version>
+        <uetlib-storage-spring-boot.version>2.0.0-alpha.3</uetlib-storage-spring-boot.version>
+        <uetlib-monitoring.version>2.0.0-alpha.3</uetlib-monitoring.version>
+        <uetlib-job.version>3.0.0-alpha.8</uetlib-job.version>
+
+        <uetlib-rust.version>0.1.3</uetlib-rust.version>
 
         <!-- Sonar & Jacoco coverage reports -->
         <sonar.coverage.module>uetlib-self-bom</sonar.coverage.module>
@@ -36,12 +46,12 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-core</artifactId>
-                <version>2.0.0-alpha.17</version>
+                <version>${uetlib-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-db</artifactId>
-                <version>2.0.0-alpha.2</version>
+                <version>${uetlib-db.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
@@ -61,22 +71,22 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-job</artifactId>
-                <version>3.0.0-alpha.8</version>
+                <version>${uetlib-job.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-monitoring</artifactId>
-                <version>2.0.0-alpha.3</version>
+                <version>${uetlib-monitoring.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-rust-crypto-jvm</artifactId>
-                <version>0.1.3</version>
+                <version>${uetlib-rust.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-rust-qrcode-jvm</artifactId>
-                <version>0.1.3</version>
+                <version>${uetlib-rust.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
@@ -95,6 +105,11 @@
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-spring-boot-geo</artifactId>
+                <version>${uetlib-spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-cloud</artifactId>
                 <version>${uetlib-spring-cloud.version}</version>
             </dependency>
@@ -106,25 +121,25 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-storage</artifactId>
-                <version>2.0.0-alpha.5</version>
+                <version>${uetlib-storage.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-storage-spring-boot</artifactId>
-                <version>2.0.0-alpha.3</version>
+                <version>${uetlib-storage-spring-boot.version}</version>
             </dependency>
 
             <!-- Test module -->
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-test</artifactId>
-                <version>2.0.0-alpha.3</version>
+                <version>${uetlib-test.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-test</artifactId>
-                <version>2.0.0-alpha.4</version>
+                <version>${uetlib-spring-boot-test.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
