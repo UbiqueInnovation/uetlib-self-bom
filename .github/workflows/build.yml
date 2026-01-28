@@ -54,16 +54,16 @@ jobs:
           servers: >-
             [
               {
-                "id": "${{ inputs.mvn_repository_id }}",
-                "username": "${{ inputs.mvn_repository_user }}",
-                "password": "${{ inputs.mvn_repository_password }}"
+                "id": "ubique-artifactory",
+                "username": "${{ secrets.UB_ARTIFACTORY_USER }}",
+                "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"
               }
             ]
-          repositories: >-
+          repositories: |
             [
               {
-                "id": "${{ inputs.mvn_repository_id }}",
-                "url": "${{ inputs.mvn_repository_url }}"
+                "id": "ubique-artifactory",
+                "url": "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}"
               }
             ]
 
