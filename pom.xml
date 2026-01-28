@@ -22,7 +22,7 @@
         <uetlib-db.version>2.0.0-alpha.2</uetlib-db.version>
         <uetlib-geo.version>2.0.0-alpha.5</uetlib-geo.version>
         <uetlib-spring-cloud.version>2.0.0-alpha.3</uetlib-spring-cloud.version>
-        <uetlib-spring-boot.version>2.0.0-alpha.30</uetlib-spring-boot.version>
+        <uetlib-spring-boot.version>2.0.0-alpha.35</uetlib-spring-boot.version>
         <uetlib-spring-boot-test.version>2.0.0-alpha.4</uetlib-spring-boot-test.version>
         <uetlib-storage-spring-boot.version>2.0.0-alpha.3</uetlib-storage-spring-boot.version>
         <uetlib-monitoring.version>2.0.0-alpha.3</uetlib-monitoring.version>
