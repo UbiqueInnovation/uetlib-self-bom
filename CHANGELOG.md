@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## 2.0.2
+
+### Patch Updates
+
+- Update to version `2.0.2`:
+    - `uetlib-spring-boot`
+    - `uetlib-spring-boot-geo`
+    - `uetlib-spring-boot-security`
+    - `uetlib-spring-boot-validation`
+- Update to version `3.0.1`:
+    - `uetlib-job`
+
+## 2.0.1
+
+### Patch Updates
+
+- Update to version `2.0.1`:
+    - `uetlib-spring-boot`
+    - `uetlib-spring-boot-geo`
+    - `uetlib-spring-boot-security`
+    - `uetlib-spring-boot-validation`
+
 ## 2.0.0
 
 - Support for Spring Boot 4
