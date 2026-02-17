@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.0.3
+
+### Patch Updates
+
+- Update to version `2.0.1`:
+    - `uetlib-core`
+
 ## 2.0.2
 
 ### Patch Updates
