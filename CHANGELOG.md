@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.1.2
+
+### Patch Updates
+
+- Update to version `2.1.1`:
+  - `uetlib-geo`
+
 ## 2.1.1
 
 ### Patch Updates
@@ -87,4 +94,3 @@
 ## 1.0.0
 
 First release.
-
