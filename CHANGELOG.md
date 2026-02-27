@@ -1,18 +1,24 @@
 # CHANGELOG
 
+## 2.1.3
+
+### Patch Updates
+
+- Patch for dedicated jobs: `uetlib-job` updated to `v3.1.2`
+
 ## 2.1.2
 
 ### Patch Updates
 
 - Update to version `2.1.1`:
-  - `uetlib-geo`
+    - `uetlib-geo`
 
 ## 2.1.1
 
 ### Patch Updates
 
 - Update to version `2.1.2`:
-  - `uetlib-monitoring`
+    - `uetlib-monitoring`
 
 ## 2.1.0
 
@@ -28,21 +34,21 @@
 ### Patch Updates
 
 - Update to version `2.0.1`:
-  - `uetlib-test`
-  - `uetlib-testcontainers*`
-  - `uetlib-spring-boot-test`
-  - `uetlib-spring-cloud*`
-  - `uetlib-storage`
-  - `uetlib-storage-spring-boot`
+    - `uetlib-test`
+    - `uetlib-testcontainers*`
+    - `uetlib-spring-boot-test`
+    - `uetlib-spring-cloud*`
+    - `uetlib-storage`
+    - `uetlib-storage-spring-boot`
 
 - Update to version `2.0.2`:
-  - `uetlib-core`
+    - `uetlib-core`
 
 - Update to version `2.0.3`:
-  - `uetlib-spring-boot`
-  - `uetlib-spring-boot-geo`
-  - `uetlib-spring-boot-security`
-  - `uetlib-spring-boot-validation`
+    - `uetlib-spring-boot`
+    - `uetlib-spring-boot-geo`
+    - `uetlib-spring-boot-security`
+    - `uetlib-spring-boot-validation`
 
 ## 2.0.3
 
