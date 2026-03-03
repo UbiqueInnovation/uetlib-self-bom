@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.0
+
+### Minor Updates
+
+- New file provider features in `uetlib-core:2.1.0`
+
 ## 2.1.3
 
 ### Patch Updates
