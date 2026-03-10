@@ -20,7 +20,7 @@
         <uetlib-core.version>2.1.0</uetlib-core.version>
         <uetlib-storage.version>2.0.1</uetlib-storage.version>
         <uetlib-db.version>2.0.1</uetlib-db.version>
-        <uetlib-geo.version>2.1.1</uetlib-geo.version>
+        <uetlib-geo.version>2.2.0</uetlib-geo.version>
         <uetlib-spring-cloud.version>2.0.1</uetlib-spring-cloud.version>
         <uetlib-spring-boot.version>2.0.3</uetlib-spring-boot.version>
         <uetlib-spring-boot-test.version>2.0.1</uetlib-spring-boot-test.version>
