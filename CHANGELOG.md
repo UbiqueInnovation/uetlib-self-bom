@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.3.0
+
+### Minor Updates
+
+- GeoTools improvements in `uetlib-geo:2.2.0`
+
 ## 2.2.0
 
 ### Minor Updates
