@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2.4.0
+
+### Minor Updates
+
+- `uetlib-spring-cloud` updated to `2.1.0`
+
+### Patch Updates
+
+- `uetlib-spring-boot*` updated to `2.0.5`
+
 ## 2.3.0
 
 ### Minor Updates
