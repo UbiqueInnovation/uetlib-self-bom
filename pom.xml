@@ -17,8 +17,8 @@
 
         <uetlib-test.version>2.0.1</uetlib-test.version>
         <uetlib-testcontainers.version>2.0.1</uetlib-testcontainers.version>
-        <uetlib-core.version>2.1.0</uetlib-core.version>
-        <uetlib-storage.version>2.0.1</uetlib-storage.version>
+        <uetlib-core.version>2.1.1</uetlib-core.version>
+        <uetlib-storage.version>2.0.3</uetlib-storage.version>
         <uetlib-db.version>2.0.1</uetlib-db.version>
         <uetlib-geo.version>2.2.0</uetlib-geo.version>
         <uetlib-spring-cloud.version>2.0.1</uetlib-spring-cloud.version>
@@ -26,7 +26,7 @@
         <uetlib-spring-boot-test.version>2.0.1</uetlib-spring-boot-test.version>
         <uetlib-storage-spring-boot.version>2.0.1</uetlib-storage-spring-boot.version>
         <uetlib-monitoring.version>2.1.2</uetlib-monitoring.version>
-        <uetlib-job.version>3.1.2</uetlib-job.version>
+        <uetlib-job.version>3.1.4</uetlib-job.version>
 
         <uetlib-rust.version>0.1.3</uetlib-rust.version>
 
