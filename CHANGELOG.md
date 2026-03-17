@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.0.0
+
+### Major Updates
+
+- `uetlib-geo` updated to `3.0.0`, see [uetlib-geo CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md)
+
 ## 2.4.0
 
 ### Minor Updates
