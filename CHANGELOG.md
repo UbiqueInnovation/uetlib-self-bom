@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.1.0
+
+### Minor Updates
+
+- `uetlib-spring-boot/-geo/-security` updated to `2.1.0`
+- `uetlib-spring-boot-validation` deleted and merged into `uetlib-spring-boot`
+
 ## 3.0.0
 
 ### Major Updates
