@@ -6,6 +6,8 @@
 
 - `uetlib-spring-boot/-geo/-security` updated to `2.1.0`
 - `uetlib-spring-boot-validation` deleted and merged into `uetlib-spring-boot`
+- `uetlib-monitoring` updated to `2.2.0`
+- `uetlib-job` updated to `3.2.0`
 
 ## 3.0.0
 
