@@ -38,7 +38,7 @@ jobs:
       # Upload artifacts to artifactory
 
       - name: Upload JARs
-        uses: UbiqueInnovation/action-systems-mvn-package-deploy@e711be07908233f807745dfe0daa7bef2bf9fb41 # v1.1.0
+        uses: UbiqueInnovation/action-systems-mvn-package-deploy@647b4e740f14c38ed79fbaa288126cf5465aff67 # v1.1.1
         with:
           parent_pom: pom.xml
           alt_deployment_repository: ubique-artifactory::${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_BACKEND }}
