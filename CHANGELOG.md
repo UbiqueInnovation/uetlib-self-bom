@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 3.2.0
+
+### Minor Updates
+
+- `uetlib-spring-cloud*` updated to `2.2.0`
+- `uetlib-geo*` updated to `3.1.0`
+
 ## 3.1.0
 
 ### Minor Updates
