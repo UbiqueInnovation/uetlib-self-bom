@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 3.3.0
+
+- Update `uetlib-core` to
+  `2.2.0`: [uetlib-core:2.2.0 CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#220)
+
 ## 3.2.0
 
 ### Minor Updates
@@ -125,15 +130,18 @@
 
 ## 2.0.0
 
-- Support for Spring Boot 4
-- `uetlib-job:3.x`
-- `2.x` for all other modules
+- `uetlib-job:2.0.0`
 
 ### Breaking changes
 
 - [uetlib-job CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md)
-- Removed module uetlib-spring-boot-problem (together with
-  zalando/problem) [uetlib-spring-boot CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md)
+
+## 1.5.0
+
+### Minor Updates
+
+- Update `uetlib-core` to
+  `1.5.0`: [uetlib-core:1.5.0 CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#150)
 
 ## 1.2.0
 
