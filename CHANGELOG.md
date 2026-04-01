@@ -1,12 +1,11 @@
 # CHANGELOG
 
-## 2.0.0
+## 1.5.0
 
-- `uetlib-job:2.0.0`
+### Minor Updates
 
-### Breaking changes
-
-- [uetlib-job CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md)
+- Update `uetlib-core` to
+  `1.5.0`: [uetlib-core:1.5.0 CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#150)
 
 ## 1.2.0
 
