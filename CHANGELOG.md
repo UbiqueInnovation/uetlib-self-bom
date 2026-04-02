@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 3.3.1
+
+- `uetlib-core` updated to
+  `2.2.1`: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#221)
+
 ## 3.3.0
 
 - `uetlib-core` updated to
