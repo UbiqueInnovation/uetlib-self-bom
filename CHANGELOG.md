@@ -2,7 +2,7 @@
 
 ## 3.3.0
 
-- Update `uetlib-core` to
+- `uetlib-core` updated to
   `2.2.0`: [uetlib-core:2.2.0 CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#220)
 
 ## 3.2.0
@@ -134,7 +134,14 @@
 
 ### Breaking changes
 
-- [uetlib-job CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md)
+- [uetlib-job:2.0.0 CHANGELOG.md](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#200)
+
+## 1.5.1
+
+### Patch Updates
+
+- Update `uetlib-core` to
+  `1.5.1`: [uetlib-core:1.5.1 CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#151)
 
 ## 1.5.0
 
@@ -152,3 +159,4 @@
 ## 1.0.0
 
 First release.
+
