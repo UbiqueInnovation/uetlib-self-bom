@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 4.0.0
+
+### Breaking changes
+
+-  `uetlib-job` upgraded to `4.0.0`. Altered job run table, needs DB migration jobs: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#400)
+
 ## 3.3.1
 
 - `uetlib-core` updated to
