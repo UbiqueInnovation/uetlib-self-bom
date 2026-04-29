@@ -26,7 +26,7 @@
         <uetlib-spring-boot-test.version>2.0.1</uetlib-spring-boot-test.version>
         <uetlib-storage-spring-boot.version>2.0.2</uetlib-storage-spring-boot.version>
         <uetlib-monitoring.version>2.2.2</uetlib-monitoring.version>
-        <uetlib-job.version>4.0.2</uetlib-job.version>
+        <uetlib-job.version>4.0.3</uetlib-job.version>
 
         <uetlib-rust.version>0.1.3</uetlib-rust.version>
 
