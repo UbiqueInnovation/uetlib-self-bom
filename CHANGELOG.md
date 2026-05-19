@@ -1,10 +1,23 @@
 # CHANGELOG
 
+## 4.0.2
+
+- `uetlib-spring-boot/-geo/-security` updated to
+  `2.1.1`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#211)
+- `uetlib-spring-cloud/-security` updated to
+  `2.2.1`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-cloud/blob/main/CHANGELOG.md#221)
+
+## 4.0.1
+
+- `uetlib-job` upgraded to
+  `4.0.3`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#403)
+
 ## 4.0.0
 
 ### Breaking changes
 
--  `uetlib-job` upgraded to `4.0.0`. Altered job run table, needs DB migration jobs: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#400)
+- `uetlib-job` upgraded to `4.0.0`. Altered job run table, needs DB migration
+  jobs: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#400)
 
 ## 3.3.1
 
