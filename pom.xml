@@ -175,6 +175,12 @@
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
+                <artifactId>uetlib-testcontainers-kafka</artifactId>
+                <version>${uetlib-testcontainers.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-testcontainers-redis</artifactId>
                 <version>${uetlib-testcontainers.version}</version>
                 <scope>test</scope>
