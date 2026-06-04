@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 4.1.0
+
+- `uetlib-spring-boot/-geo/-security` updated to
+  `2.2.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#220)
+- `uetlib-core` updated to
+  `2.3.3`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#233)
+- `uetlib-testcontainers*` updated to
+  `2.1.0` and added
+  `uetlib-testcontainers-kafka`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-testcontainers/blob/main/CHANGELOG.md#210)
+
 ## 4.0.2
 
 - `uetlib-spring-boot/-geo/-security` updated to
