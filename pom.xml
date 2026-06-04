@@ -16,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <uetlib-test.version>2.0.1</uetlib-test.version>
-        <uetlib-testcontainers.version>2.0.1</uetlib-testcontainers.version>
+        <uetlib-testcontainers.version>2.1.0</uetlib-testcontainers.version>
         <uetlib-core.version>2.3.0</uetlib-core.version>
         <uetlib-storage.version>2.0.3</uetlib-storage.version>
         <uetlib-db.version>2.0.1</uetlib-db.version>
