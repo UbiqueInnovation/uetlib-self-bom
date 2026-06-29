@@ -15,16 +15,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <uetlib-test.version>2.0.1</uetlib-test.version>
+        <uetlib-test.version>2.1.0</uetlib-test.version>
         <uetlib-testcontainers.version>2.1.0</uetlib-testcontainers.version>
         <uetlib-core.version>2.3.3</uetlib-core.version>
-        <uetlib-storage.version>2.0.3</uetlib-storage.version>
-        <uetlib-db.version>2.0.1</uetlib-db.version>
-        <uetlib-geo.version>3.1.1</uetlib-geo.version>
-        <uetlib-spring-cloud.version>2.2.1</uetlib-spring-cloud.version>
+        <uetlib-storage.version>2.2.0</uetlib-storage.version>
+        <uetlib-db.version>2.1.0</uetlib-db.version>
+        <uetlib-geo.version>3.2.0</uetlib-geo.version>
+        <uetlib-spring-cloud.version>2.3.0</uetlib-spring-cloud.version>
         <uetlib-spring-boot.version>2.2.1</uetlib-spring-boot.version>
         <uetlib-spring-boot-test.version>2.0.1</uetlib-spring-boot-test.version>
-        <uetlib-storage-spring-boot.version>2.0.2</uetlib-storage-spring-boot.version>
+        <uetlib-storage-spring-boot.version>2.1.0</uetlib-storage-spring-boot.version>
         <uetlib-monitoring.version>2.2.2</uetlib-monitoring.version>
         <uetlib-job.version>4.0.6</uetlib-job.version>
 
