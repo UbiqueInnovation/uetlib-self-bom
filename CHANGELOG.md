@@ -1,5 +1,43 @@
 # CHANGELOG
 
+## 4.2.0
+
+- `uetlib-core` updated to
+  `2.4.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#240)
+- `uetlib-geo/-job/-db` updated to
+  `3.2.1`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#321)
+
+## 4.1.3
+
+- `uetlib-spring-boot-test` updated to
+  `2.1.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-boot-test/blob/main/CHANGELOG.md#210)
+- `uetlib-monitoring` updated to
+  `2.3.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-monitoring/blob/main/CHANGELOG.md#230)
+- `uetlib-spring-boot/-geo/-security` updated to
+  `2.2.2`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#222)
+
+## 4.1.2
+
+- `uetlib-test` updated to
+  `2.1.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-test/blob/main/CHANGELOG.md#210)
+- `uetlib-storage` updated to
+  `2.1.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#210)
+- `uetlib-db` updated to
+  `2.1.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-db/blob/main/CHANGELOG.md#210)
+- `uetlib-geo/-job/-db` updated to
+  `3.2.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#320)
+- `uetlib-spring-cloud` updated to
+  `2.3.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-cloud/blob/main/CHANGELOG.md#230)
+- `uetlib-storage-spring-boot` updated to
+  `2.1.0`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-storage-spring-boot/blob/main/CHANGELOG.md#210)
+
+## 4.1.1
+
+- `uetlib-spring-boot/-geo/-security` updated to
+  `2.2.1`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#221)
+- `uetlib-job` updated to
+  `4.0.6`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#406)
+
 ## 4.1.0
 
 - `uetlib-spring-boot/-geo/-security` updated to
@@ -64,7 +102,7 @@
 
 ### Major Updates
 
-- `uetlib-geo` updated to `3.0.0`,
+- `uetlib-geo/-job/-db` updated to `3.0.0`,
   see [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#300)
 
 ## 2.4.0
@@ -104,7 +142,7 @@
 
 ### Patch Updates
 
-- `uetlib-geo` updated to
+- `uetlib-geo/-job/-db` updated to
   `2.1.1`: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#211)
 
 ## 2.1.1
