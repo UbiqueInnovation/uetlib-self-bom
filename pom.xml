@@ -17,7 +17,7 @@
 
         <uetlib-test.version>2.1.0</uetlib-test.version>
         <uetlib-testcontainers.version>2.1.0</uetlib-testcontainers.version>
-        <uetlib-core.version>2.3.3</uetlib-core.version>
+        <uetlib-core.version>2.4.0</uetlib-core.version>
         <uetlib-storage.version>2.2.0</uetlib-storage.version>
         <uetlib-db.version>2.1.0</uetlib-db.version>
         <uetlib-geo.version>3.2.0</uetlib-geo.version>
