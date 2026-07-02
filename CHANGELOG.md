@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 4.2.1
+
+- `uetlib-monitoring` updated to
+  `2.3.1`. [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-monitoring/blob/main/CHANGELOG.md#231)
+
 ## 4.2.0
 
 - `uetlib-core` updated to
