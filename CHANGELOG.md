@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 4.4.0
+
+- `uetlib-spring-boot/-geo/-security` updated to
+  `2.4.0`: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#230)
+- `uetlib-storage` updated to
+  `2.3.0`: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#230)
+- `uetlib-job` updated to
+  `4.1.0`: [CHANGELOG](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#410)
+
 ## 4.3.0
 
 - `uetlib-spring-boot/-geo/-security` updated to
