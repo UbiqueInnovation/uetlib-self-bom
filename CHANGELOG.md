@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 4.5.1
+
+- `uetlib-storage` updated to
+  `2.3.1`: [Changelog/2.3.1](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#231) [Diff/2.3.0-2.3.1](https://github.com/UbiqueInnovation/uetlib-storage/compare/v2.3.0...v2.3.1)
+- `uetlib-spring-cloud/-security` updated to
+  `2.3.1`: [Changelog/2.3.1](https://github.com/UbiqueInnovation/uetlib-spring-cloud/blob/main/CHANGELOG.md#231) [Diff/2.3.0-2.3.1](https://github.com/UbiqueInnovation/uetlib-spring-cloud/compare/v2.3.0...v2.3.1)
+
 ## 4.5.0
 
 - `uetlib-test` updated to
