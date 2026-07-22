@@ -27,6 +27,15 @@ jobs:
         with:
           parent_pom: pom.xml
 
+      - name: Maven Verify Sonar
+        uses: UbiqueInnovation/action-systems-mvn-verify-sonar@27fb8ea6769575fbdd59cc60764dfda549821db3 # v1.0.2
+        with:
+          ref_name: ${{ github.ref_name }}
+          parent_pom: pom.xml
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          sonar_token: ${{ secrets.UBIQUE_SONAR_TOKEN }}
+
+
   test-version-bump:
     name: Test Version Bump
     runs-on: ubuntu-latest
