@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 4.5.2
+
+- `uetlib-core` updated to
+  `2.4.1`: [Changelog/2.4.1](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#241) [Diff/2.4.0-2.4.1](https://github.com/UbiqueInnovation/uetlib-core/compare/v2.4.0...v2.4.1)
+- `uetlib-job` updated to
+  `4.3.0`: [Changelog/4.3.0](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#421) [Diff/4.2.0-4.2.1](https://github.com/UbiqueInnovation/uetlib-job/compare/v4.2.0...v4.3.0)
+
 ## 4.5.1
 
 - `uetlib-storage` updated to
