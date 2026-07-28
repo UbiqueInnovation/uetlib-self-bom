@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.ref_name }}
 
@@ -46,7 +46,7 @@ jobs:
           - uetlib-job-testapp
     steps:
       - name: Checkout uetlib-self-bom repository
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Prepare maven
         uses: UbiqueInnovation/action-systems-mvn-prepare@1f1440329f80458fcbf99214a888160840196d17 # v1.1.0
@@ -86,7 +86,7 @@ jobs:
           echo "self_bom_version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Checkout ${{ matrix.repository }}
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: UbiqueInnovation/${{ matrix.repository }}
           path: ${{ matrix.repository }}
