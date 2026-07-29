@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 5.0.0
+
+- `uetlib-job` updated to
+  `5.0.1`: [Changelog/5.0.1](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#501) [Diff/4.3.0-5.0.1](https://github.com/UbiqueInnovation/uetlib-job/compare/v4.3.0...v5.0.1)
+- `uetlib-spring-boot/-geo/-security` updated to
+  `3.0.1`: [Changelog/3.0.1](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#301) [Diff/2.6.2-3.0.1](https://github.com/UbiqueInnovation/uetlib-spring-boot/compare/v2.6.2...v3.0.1)
+
+## 4.5.3
+
+- `uetlib-webp` added to dependency management at version
+  `0.0.10`: [Changelog/0.0.10](https://github.com/UbiqueInnovation/uetlib-webp/blob/main/CHANGELOG.md#0010)
+- `uetlib-storage` updated to
+  `2.3.1`: [Changelog/2.3.1](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#231) [Diff/2.3.0-2.3.1](https://github.com/UbiqueInnovation/uetlib-storage/compare/v2.3.0...v2.3.1)
+
 ## 4.5.2
 
 - `uetlib-core` updated to
@@ -9,10 +23,10 @@
 
 ## 4.5.1
 
-- `uetlib-storage` updated to
-  `2.3.1`: [Changelog/2.3.1](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#231) [Diff/2.3.0-2.3.1](https://github.com/UbiqueInnovation/uetlib-storage/compare/v2.3.0...v2.3.1)
 - `uetlib-spring-cloud/-security` updated to
   `2.3.1`: [Changelog/2.3.1](https://github.com/UbiqueInnovation/uetlib-spring-cloud/blob/main/CHANGELOG.md#231) [Diff/2.3.0-2.3.1](https://github.com/UbiqueInnovation/uetlib-spring-cloud/compare/v2.3.0...v2.3.1)
+- `uetlib-spring-boot/-geo/-security` updated to
+  `2.6.2`: [Changelog/2.6.2](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#262) [Diff/2.5.0-2.6.2](https://github.com/UbiqueInnovation/uetlib-spring-boot/compare/v2.5.0...v2.6.2)
 
 ## 4.5.0
 
