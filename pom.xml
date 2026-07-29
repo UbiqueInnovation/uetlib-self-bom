@@ -15,12 +15,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <uetlib-rust.version>0.1.3</uetlib-rust.version>
-
         <!-- Sonar & Jacoco coverage reports -->
-        <sonar.coverage.module>uetlib-self-bom</sonar.coverage.module>
         <sonar.coverage.jacoco.xmlReportPaths>
-            ${project.basedir}/../${sonar.coverage.module}/target/site/jacoco-aggregate/jacoco.xml
+            ${project.basedir}/uetlib-self-bom/target/site/jacoco-aggregate/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>
         <sonar.projectName>${project.artifactId}</sonar.projectName>
         <sonar.projectKey>UbiqueInnovation_${sonar.projectName}</sonar.projectKey>
@@ -58,7 +55,7 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-job</artifactId>
-                <version>4.3.0</version>
+                <version>5.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
@@ -78,17 +75,17 @@
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
                 <artifactId>uetlib-spring-boot-geo</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique</groupId>
