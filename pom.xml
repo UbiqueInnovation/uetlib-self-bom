@@ -195,6 +195,11 @@
 
     <repositories>
         <repository>
+            <id>ubique-artifactory</id>
+            <name>backend</name>
+            <url>https://artifactory.ubique.ch/artifactory/backend</url>
+        </repository>
+        <repository>
             <id>ubique-artifactory-virtual</id>
             <name>ubique</name>
             <url>https://artifactory.ubique.ch/artifactory/ubique</url>
@@ -203,6 +208,11 @@
             <id>osgeo</id>
             <name>Open Source Geospatial Foundation Repository</name>
             <url>https://repo.osgeo.org/repository/release/</url>
+        </repository>
+        <repository>
+            <id>unidata-all</id>
+            <name>Unidata All</name>
+            <url>https://artifacts.unidata.ucar.edu/all</url>
         </repository>
     </repositories>
 
