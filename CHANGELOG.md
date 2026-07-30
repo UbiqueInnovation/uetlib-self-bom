@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.0.3
+
+- updated actions to not run tests twice for sonar
+
 ## 5.0.2
 
 - `uetlib-spring-boot/-geo/-security` updated to
