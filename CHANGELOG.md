@@ -3,6 +3,8 @@
 ## 5.0.3
 
 - updated actions to not run tests twice for sonar
+- `uetlib-payment/-datatrans/-postfincance` are now depedency-managed starting with version
+  2.0.1: [Changelog/2.0.1](https://github.com/UbiqueInnovation/uetlib-payment/blob/main/CHANGELOG.md#201)
 
 ## 5.0.2
 
