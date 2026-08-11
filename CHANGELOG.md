@@ -2,6 +2,8 @@
 
 ## 5.1.0
 
+- `uetlib-monitoring` updated to
+  `2.4.0`: [Changelog/2.4.0](https://github.com/UbiqueInnovation/uetlib-monitoring/blob/main/CHANGELOG.md#240) [Diff/2.3.3-2.4.0](https://github.com/UbiqueInnovation/uetlib-monitoring/compare/v2.3.3...v2.4.0)
 - `uetlib-payment/-datatrans/-postfincance` updated to
   `2.0.3`: [Changelog/2.0.3](https://github.com/UbiqueInnovation/uetlib-payment/blob/main/CHANGELOG.md#203) [Diff/2.0.1-2.0.3](https://github.com/UbiqueInnovation/uetlib-payment/compare/v2.0.1...v2.0.3)
 
