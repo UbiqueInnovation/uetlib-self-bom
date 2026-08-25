@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## 5.3.0
+
+- `uetlib-core` updated to
+  `2.4.4`: [Changelog/2.4.4](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#244) [Diff/2.4.3-2.4.4](https://github.com/UbiqueInnovation/uetlib-core/compare/v2.4.3...v2.4.4)
+- `uetlib-db` updated to
+  `2.3.0`: [Changelog/2.3.0](https://github.com/UbiqueInnovation/uetlib-db/blob/main/CHANGELOG.md#230) [Diff/2.2.1-2.3.0](https://github.com/UbiqueInnovation/uetlib-db/compare/v2.2.1...v2.3.0)
+- `uetlib-geo/-db/-job` updated to
+  `3.2.4`: [Changelog/3.2.4](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#324) [Diff/3.2.3-3.2.4](https://github.com/UbiqueInnovation/uetlib-geo/compare/v3.2.3...v3.2.4)
+- `uetlib-payment/-datatrans/-postfinance` updated to
+  `2.0.7`: [Changelog/2.0.7](https://github.com/UbiqueInnovation/uetlib-payment/blob/main/CHANGELOG.md#207) [Diff/2.0.4-2.0.7](https://github.com/UbiqueInnovation/uetlib-payment/compare/v2.0.4...v2.0.7)
+- `uetlib-spring-boot/-geo/-security` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#310) [Diff/3.0.4-3.1.0](https://github.com/UbiqueInnovation/uetlib-spring-boot/compare/v3.0.4...v3.1.0)
+- `uetlib-spring-cloud/-security` updated to
+  `2.4.1`: [Changelog/2.4.1](https://github.com/UbiqueInnovation/uetlib-spring-cloud/blob/main/CHANGELOG.md#241) [Diff/2.4.0-2.4.1](https://github.com/UbiqueInnovation/uetlib-spring-cloud/compare/v2.4.0...v2.4.1)
+- `uetlib-testcontainers*` updated to
+  `2.1.2`: [Changelog/2.1.2](https://github.com/UbiqueInnovation/uetlib-testcontainers/blob/main/CHANGELOG.md#212) [Diff/2.1.1-2.1.2](https://github.com/UbiqueInnovation/uetlib-testcontainers/compare/v2.1.1...v2.1.2)
+
 ## 5.2.0
 
 - `uetlib-core` updated to
