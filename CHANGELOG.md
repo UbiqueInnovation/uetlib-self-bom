@@ -8,6 +8,8 @@
   `2.3.0`: [Changelog/2.3.0](https://github.com/UbiqueInnovation/uetlib-db/blob/main/CHANGELOG.md#230) [Diff/2.2.1-2.3.0](https://github.com/UbiqueInnovation/uetlib-db/compare/v2.2.1...v2.3.0)
 - `uetlib-geo/-db/-job` updated to
   `3.2.4`: [Changelog/3.2.4](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#324) [Diff/3.2.3-3.2.4](https://github.com/UbiqueInnovation/uetlib-geo/compare/v3.2.3...v3.2.4)
+- `uetlib-job` updated to
+  `5.0.7`: [Changelog/5.0.7](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#507) [Diff/5.0.6-5.0.7](https://github.com/UbiqueInnovation/uetlib-job/compare/v5.0.6...v5.0.7)
 - `uetlib-payment/-datatrans/-postfinance` updated to
   `2.0.7`: [Changelog/2.0.7](https://github.com/UbiqueInnovation/uetlib-payment/blob/main/CHANGELOG.md#207) [Diff/2.0.4-2.0.7](https://github.com/UbiqueInnovation/uetlib-payment/compare/v2.0.4...v2.0.7)
 - `uetlib-spring-boot/-geo/-security` updated to
