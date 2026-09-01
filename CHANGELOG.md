@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## 5.4.0
+
+- `uetlib-core` updated to
+  `2.5.0`: [Changelog/2.5.0](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#250) [Diff/2.4.4-2.5.0](https://github.com/UbiqueInnovation/uetlib-core/compare/v2.4.4...v2.5.0)
+- `uetlib-db` updated to
+  `2.3.1`: [Changelog/2.3.1](https://github.com/UbiqueInnovation/uetlib-db/blob/main/CHANGELOG.md#231) [Diff/2.3.0-2.3.1](https://github.com/UbiqueInnovation/uetlib-db/compare/v2.3.0...v2.3.1)
+- `uetlib-geo/-db/-job` updated to
+  `3.2.5`: [Changelog/3.2.5](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#325) [Diff/3.2.4-3.2.5](https://github.com/UbiqueInnovation/uetlib-geo/compare/v3.2.4...v3.2.5)
+- `uetlib-monitoring` updated to
+  `2.5.0`: [Changelog/2.5.0](https://github.com/UbiqueInnovation/uetlib-monitoring/blob/main/CHANGELOG.md#250) [Diff/2.4.0-2.5.0](https://github.com/UbiqueInnovation/uetlib-monitoring/compare/v2.4.0...v2.5.0)
+- `uetlib-payment/-datatrans/-postfinance` updated to
+  `2.0.8`: [Changelog/2.0.8](https://github.com/UbiqueInnovation/uetlib-payment/blob/main/CHANGELOG.md#208) [Diff/2.0.7-2.0.8](https://github.com/UbiqueInnovation/uetlib-payment/compare/v2.0.7...v2.0.8)
+- `uetlib-spring-boot-test` updated to
+  `2.1.2`: [Changelog/2.1.2](https://github.com/UbiqueInnovation/uetlib-spring-boot-test/blob/main/CHANGELOG.md#212) [Diff/2.1.1-2.1.2](https://github.com/UbiqueInnovation/uetlib-spring-boot-test/compare/v2.1.1...v2.1.2)
+- `uetlib-storage` updated to
+  `2.3.4`: [Changelog/2.3.4](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#234) [Diff/2.3.2-2.3.4](https://github.com/UbiqueInnovation/uetlib-storage/compare/v2.3.2...v2.3.4)
+- `uetlib-storage-spring-boot` updated to
+  `2.2.2`: [Changelog/2.2.2](https://github.com/UbiqueInnovation/uetlib-storage-spring-boot/blob/main/CHANGELOG.md#222) [Diff/2.2.1-2.2.2](https://github.com/UbiqueInnovation/uetlib-storage-spring-boot/compare/v2.2.1...v2.2.2)
+- `uetlib-test` updated to
+  `2.2.2`: [Changelog/2.2.2](https://github.com/UbiqueInnovation/uetlib-test/blob/main/CHANGELOG.md#222) [Diff/2.2.1-2.2.2](https://github.com/UbiqueInnovation/uetlib-test/compare/v2.2.1...v2.2.2)
+- `uetlib-webp` updated to
+  `0.1.2`: [Changelog/0.1.2](https://github.com/UbiqueInnovation/uetlib-webp/blob/main/CHANGELOG.md#012) [Diff/0.1.1-0.1.2](https://github.com/UbiqueInnovation/uetlib-webp/compare/v0.1.1...v0.1.2)
+
 ## 5.3.0
 
 - `uetlib-core` updated to
