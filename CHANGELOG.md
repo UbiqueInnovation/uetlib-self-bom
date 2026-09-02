@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 5.4.1
+- `uetlib-storage` updated to
+  `2.3.5`: [Changelog/2.3.5](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#235) [Diff/2.3.4-2.3.5](https://github.com/UbiqueInnovation/uetlib-storage/compare/v2.3.4...v2.3.5)
+
 ## 5.4.0
 
 - `uetlib-core` updated to
