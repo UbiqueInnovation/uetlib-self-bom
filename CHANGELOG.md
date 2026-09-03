@@ -1,6 +1,14 @@
 # CHANGELOG
 
+## 5.4.2
+
+- `uetlib-monitoring` updated to
+  `2.5.1`: [Changelog/2.5.1](https://github.com/UbiqueInnovation/uetlib-monitoring/blob/main/CHANGELOG.md#251) [Diff/2.5.0-2.5.1](https://github.com/UbiqueInnovation/uetlib-monitoring/compare/v2.5.0...v2.5.1)
+- `uetlib-storage-spring-boot` updated to
+  `2.2.4`: [Changelog/2.2.4](https://github.com/UbiqueInnovation/uetlib-storage-spring-boot/blob/main/CHANGELOG.md#235) [Diff/2.2.2-2.2.4](https://github.com/UbiqueInnovation/uetlib-storage-spring-boot/compare/v2.2.2...v2.2.4)
+
 ## 5.4.1
+
 - `uetlib-storage` updated to
   `2.3.5`: [Changelog/2.3.5](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#235) [Diff/2.3.4-2.3.5](https://github.com/UbiqueInnovation/uetlib-storage/compare/v2.3.4...v2.3.5)
 
