@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 5.4.3
+
+- `uetlib-core` updated to
+  `2.5.1`: [Changelog/2.5.1](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#251) [Diff/2.5.0-2.5.1](https://github.com/UbiqueInnovation/uetlib-core/compare/v2.5.0...v2.5.1)
+
 ## 5.4.2
 
 - `uetlib-monitoring` updated to
