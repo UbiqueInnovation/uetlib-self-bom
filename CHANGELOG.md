@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 5.6.0
+
+- `uetlib-core` updated to
+  `2.6.1`: [Changelog/2.6.1](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#261) [Diff/2.5.2-2.6.1](https://github.com/UbiqueInnovation/uetlib-core/compare/v2.5.2...v2.6.1)
+- `uetlib-spring-boot/-geo/-security` updated to
+  `3.2.0`: [Changelog/3.2.0](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#320) [Diff/3.1.0-3.2.0](https://github.com/UbiqueInnovation/uetlib-spring-boot/compare/v3.1.0...v3.2.0)
+- `uetlib-job` updated to
+  `5.1.1`: [Changelog/5.1.1](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#511) [Diff/5.1.0-5.1.1](https://github.com/UbiqueInnovation/uetlib-job/compare/v5.1.0...v5.1.1)
+
 ## 5.5.0
 
 - `uetlib-core` updated to
