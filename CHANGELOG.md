@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 5.7.0
+
+- `uetlib-job` updated to
+  `5.2.0`: [Changelog/5.2.0](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#520) [Diff/5.1.1-5.2.0](https://github.com/UbiqueInnovation/uetlib-job/compare/v5.1.1...v5.2.0)
+
 ## 5.6.0
 
 - `uetlib-core` updated to
