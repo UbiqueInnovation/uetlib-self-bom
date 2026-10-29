@@ -19,7 +19,7 @@ You can use it as following:
         <dependency>
             <groupId>ch.ubique.uetlib</groupId>
             <artifactId>uetlib-self-bom</artifactId>
-            <version>...</version>
+            <version>6.0.0</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>

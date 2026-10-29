@@ -6,7 +6,7 @@
 
     <groupId>ch.ubique.uetlib</groupId>
     <artifactId>uetlib-self-bom</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>7.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -30,52 +30,52 @@
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-core</artifactId>
-                <version>2.6.1</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-db</artifactId>
-                <version>2.3.1</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-geo</artifactId>
-                <version>3.2.5</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-geo-db</artifactId>
-                <version>3.2.5</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-geo-job</artifactId>
-                <version>3.2.5</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-job</artifactId>
-                <version>5.2.1</version>
+                <version>6.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-monitoring</artifactId>
-                <version>2.5.2</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-payment</artifactId>
-                <version>2.0.8</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-payment-datatrans</artifactId>
-                <version>2.0.8</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-payment-postfinance</artifactId>
-                <version>2.0.8</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
@@ -90,101 +90,101 @@
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-boot</artifactId>
-                <version>3.2.1</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
-                <version>3.2.1</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-boot-geo</artifactId>
-                <version>3.2.1</version>
+                <version>4.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-cloud</artifactId>
-                <version>2.4.1</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-cloud-security</artifactId>
-                <version>2.4.1</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-storage</artifactId>
-                <version>2.3.5</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-storage-spring-boot</artifactId>
-                <version>2.2.4</version>
+                <version>3.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-webp</artifactId>
-                <version>0.1.2</version>
+                <version>1.0.0</version>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-test</artifactId>
-                <version>2.2.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-spring-boot-test</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers-mariadb</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers-mongodb</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers-mysql</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers-postgresql</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers-influxdb</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers-kafka</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>ch.ubique.uetlib</groupId>
                 <artifactId>uetlib-testcontainers-redis</artifactId>
-                <version>2.1.2</version>
+                <version>3.0.0</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
