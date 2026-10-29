@@ -119,7 +119,7 @@ jobs:
 
       - name: Update uetlib-self-bom version for ${{ matrix.repository }}
         run: |
-          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.self_bom_version }} -Dincludes=ch.ubique:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.self_bom_version }} -Dincludes=ch.ubique.uetlib:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
 
       - name: Build ${{ matrix.repository }} with Maven
         run: mvn --batch-mode --settings ~/.m2/settings.xml --update-snapshots install -f ${{ matrix.repository }}/pom.xml
