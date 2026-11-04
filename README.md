@@ -17,7 +17,7 @@ You can use it as following:
 <dependencyManagement>
     <dependencies>
         <dependency>
-            <groupId>ch.ubique.uetlib</groupId>
+            <groupId>ch.uetlib</groupId>
             <artifactId>uetlib-self-bom</artifactId>
             <version>6.0.0</version>
             <type>pom</type>
