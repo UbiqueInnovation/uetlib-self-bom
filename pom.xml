@@ -61,28 +61,38 @@
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
+                <artifactId>uetlib-errorprone</artifactId>
+                <version>0.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-geo</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.2</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-geo-db</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.2</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-geo-job</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.uetlib</groupId>
+                <artifactId>uetlib-inotify-java</artifactId>
+                <version>3.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-job</artifactId>
-                <version>6.0.0</version>
+                <version>6.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-monitoring</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
@@ -101,27 +111,17 @@
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
-                <artifactId>uetlib-rust-crypto-jvm</artifactId>
-                <version>0.1.3</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.uetlib</groupId>
-                <artifactId>uetlib-rust-qrcode-jvm</artifactId>
-                <version>0.1.3</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-spring-boot</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-spring-boot-security</artifactId>
-                <version>4.0.0</version>
+                <version>4.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
-                <artifactId>uetlib-spring-boot-geo</artifactId>
+                <artifactId>uetlib-geo-spring-boot</artifactId>
                 <version>4.0.0</version>
             </dependency>
             <dependency>
@@ -142,7 +142,7 @@
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-storage-spring-boot</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.1</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
