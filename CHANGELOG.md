@@ -1,8 +1,15 @@
 # CHANGELOG
 
+## 6.0.1
+
+- Align all managed uetlib artifacts with the latest patch releases, including all geo modules at `4.0.3`,
+  storage `3.0.2` and WebP `1.0.3`.
+- Update shared Maven build and publish workflows to v0.2.4.
+
 ## 6.0.0
 
-- Move `uetlib-spring-boot-geo` into the geo repository as `uetlib-geo-spring-boot`, with packages under `ch.uetlib.geo.spring.boot`; update consumers and migration mappings.
+- Move `uetlib-spring-boot-geo` into the geo repository as `uetlib-geo-spring-boot`, with packages under
+  `ch.uetlib.geo.spring.boot`; update consumers and migration mappings.
 
 - Move Java packages and class references from `ch.ubique.uetlib` to `ch.uetlib`.
 - Add new packages `uetlib-errorprone` and `uetlib-inotify-java` to self-bom
@@ -12,7 +19,8 @@
 - Move Rust crypto and QR-code dependency management to the Ubique-internal parents; those artifacts are excluded from
   the initial public release.
 
-- Move Java packages from `ch.ubique.backend` to `ch.uetlib`, including class-name resources. The combined OpenRewrite migration also renames known Spring configuration keys to `ch.uetlib.*`.
+- Move Java packages from `ch.ubique.backend` to `ch.uetlib`, including class-name resources. The combined OpenRewrite
+  migration also renames known Spring configuration keys to `ch.uetlib.*`.
 - Remove the inherited Ubique Artifactory repository and deployment destination; private consumers must configure their
   own registry.
 - Add Apache-2.0 licensing for original code, preserve third-party licenses, and add public project metadata and
