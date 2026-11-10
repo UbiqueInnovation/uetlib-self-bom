@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 6.0.1
+## 6.0.2
 
 - Align all managed uetlib artifacts with the latest patch releases, including all geo modules at `4.0.3`,
   storage `3.0.2` and WebP `1.0.3`.
