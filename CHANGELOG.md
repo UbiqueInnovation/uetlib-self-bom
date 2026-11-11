@@ -4,7 +4,6 @@
 
 - Align all managed uetlib artifacts with the latest patch releases, including all geo modules at `4.0.3`,
   storage `3.0.2` and WebP `1.0.3`.
-- Update shared Maven build and publish workflows to v0.2.4.
 
 ## 6.0.0
 
