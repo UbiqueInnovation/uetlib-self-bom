@@ -9,7 +9,7 @@ jobs:
     name: Build Project
     permissions:
       contents: read
-    uses: UbiqueInnovation/uetlib/.github/workflows/mvn-install.yml@23b270cee4169cadc716937c31d7a14d3e69a301 # v0.2.4
+    uses: UbiqueInnovation/uetlib/.github/workflows/mvn-install.yml@b68cc517848c43ba646b910a7e412a1c7b8752e8 # v1.0.0
     with:
       sonar: true
     secrets:
@@ -80,7 +80,7 @@ jobs:
         id: get_version
         run: |
           VERSION=$(mvn --settings ~/.m2/settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout)
-          echo "self_bom_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "self_bom_version=$VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Checkout ${{ matrix.repository }}
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
