@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 6.0.5
+
+- Use shared Maven build and publish workflows at `v1.0.0` to enforce formatting checks in CI.
+
 ## 6.0.4
 
 - `uetlib-core` updated to
