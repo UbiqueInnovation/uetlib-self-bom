@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- `uetlib-job` updated to
+  `6.0.3`: [Changelog/6.0.3](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#603) [Diff/6.0.2-6.0.3](https://github.com/UbiqueInnovation/uetlib-job/compare/v6.0.2...v6.0.3)
+
 ## 6.0.2
 
 - Align all managed uetlib artifacts with the latest patch releases, including all geo modules at `4.0.3`,
