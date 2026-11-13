@@ -82,12 +82,12 @@
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-inotify-java</artifactId>
-                <version>3.0.2</version>
+                <version>3.0.3</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-job</artifactId>
-                <version>6.0.3</version>
+                <version>6.0.5</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
