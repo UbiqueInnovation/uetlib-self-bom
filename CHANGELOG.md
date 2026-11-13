@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 6.0.6
+
+- `uetlib-inotify-java` updated to
+  `3.0.3`: [Changelog/3.0.3](https://github.com/UbiqueInnovation/uetlib-inotify-java/blob/main/CHANGELOG.md#303) [Diff/3.0.2-3.0.3](https://github.com/UbiqueInnovation/uetlib-inotify-java/compare/v3.0.2...v3.0.3)
+- `uetlib-job` updated to
+  `6.0.5`: [Changelog/6.0.5](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#605) [Diff/6.0.3-6.0.5](https://github.com/UbiqueInnovation/uetlib-job/compare/v6.0.3...v6.0.5)
+
 ## 6.0.5
 
 - Use shared Maven build and publish workflows at `v1.0.0` to enforce formatting checks in CI.
