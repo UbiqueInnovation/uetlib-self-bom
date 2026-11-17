@@ -87,7 +87,7 @@ jobs:
         with:
           repository: UbiqueInnovation/${{ matrix.repository }}
           path: ${{ matrix.repository }}
-          token: ${{ secrets.WORKFLOW_PAT_GITHUB }}
+          persist-credentials: false
           ref: main
 
       - name: Update uetlib-self-bom version for ${{ matrix.repository }}
