@@ -34,24 +34,13 @@ jobs:
       - name: Checkout uetlib-self-bom repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Prepare maven
-        uses: UbiqueInnovation/action-systems-mvn-prepare@bfeb86b8129a37da7d062487cc1dfb60718836cc # v2.0.0
+      - name: Set up Java
+        uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880 # v6.3.0
         with:
-          mvn_servers: >-
-            [
-              {
-                "id": "ubique-artifactory-virtual",
-                "username": "${{ secrets.UB_ARTIFACTORY_USER }}",
-                "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"
-              }
-            ]
-          mvn_repositories: >-
-            [
-              {
-                "id": "ubique-artifactory-virtual",
-                "url": "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_UBIQUE }}"
-              }
-            ]
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+          overwrite-settings: false
 
       - name: Create custom mvn repository settings.xml
         uses: s4u/maven-settings-action@4cfd36368400327fd45dcb28f190ae7b85533deb # v4.1.0
