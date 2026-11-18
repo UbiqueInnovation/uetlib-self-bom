@@ -1,15 +1,15 @@
 name: Build
 on:
   push:
-    branches: [ '**' ]
-    tags-ignore: [ v* ]
+    branches: [ main ]
+  pull_request:
 
 jobs:
   build:
     name: Build Project
     permissions:
       contents: read
-    uses: UbiqueInnovation/uetlib/.github/workflows/mvn-install.yml@f7294d1a69143d2dafbd830b9b1b93335d3e7e7a # v1.1.0
+    uses: UbiqueInnovation/uetlib/.github/workflows/mvn-install.yml@b2274a24393298710015211301cf003af6742147 # v1.1.1
     with:
       sonar: true
     secrets:
@@ -39,10 +39,20 @@ jobs:
         with:
           distribution: temurin
           java-version: '25'
-          cache: maven
+          # Pull request builds resolve without Artifactory and use their own Maven cache below.
+          cache: ${{ github.event_name != 'pull_request' && github.event_name != 'pull_request_target' && 'maven' || '' }}
           overwrite-settings: false
 
+      - name: Cache Maven repository for pull requests
+        if: ${{ github.event_name == 'pull_request' || github.event_name == 'pull_request_target' }}
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.m2/repository
+          key: maven-pr-${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
+          restore-keys: maven-pr-${{ runner.os }}-
+
       - name: Create custom mvn repository settings.xml
+        if: ${{ github.event_name != 'pull_request' && github.event_name != 'pull_request_target' }}
         uses: s4u/maven-settings-action@4cfd36368400327fd45dcb28f190ae7b85533deb # v4.1.0
         with:
           githubServer: false
@@ -63,12 +73,12 @@ jobs:
             ]
 
       - name: Build uetlib-self-bom
-        run: mvn --batch-mode --settings ~/.m2/settings.xml install -DskipTests
+        run: mvn --batch-mode install -DskipTests
 
       - name: Get uetlib-self-bom version
         id: get_version
         run: |
-          VERSION=$(mvn --settings ~/.m2/settings.xml help:evaluate -Dexpression=project.version -q -DforceStdout)
+          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
           echo "self_bom_version=$VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Checkout ${{ matrix.repository }}
@@ -81,7 +91,7 @@ jobs:
 
       - name: Update uetlib-self-bom version for ${{ matrix.repository }}
         run: |
-          mvn --batch-mode --settings ~/.m2/settings.xml versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.self_bom_version }} -Dincludes=ch.uetlib:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
+          mvn --batch-mode versions:use-dep-version -DdepVersion=${{ steps.get_version.outputs.self_bom_version }} -Dincludes=ch.uetlib:uetlib-self-bom -DallowSnapshots=true -f ${{ matrix.repository }}/pom.xml
 
       - name: Build ${{ matrix.repository }} with Maven
-        run: mvn --batch-mode --settings ~/.m2/settings.xml --update-snapshots install -f ${{ matrix.repository }}/pom.xml
+        run: mvn --batch-mode --update-snapshots install -f ${{ matrix.repository }}/pom.xml
