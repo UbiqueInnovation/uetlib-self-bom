@@ -6,6 +6,7 @@
   workflows at `v1.1.1`.
 - Use shared Maven workflows at `v1.1.0`: wait for the SonarCloud quality gate and analyse with the
   uetlib-only Sonar token.
+- Use `uetlib-core` 3.0.4, the latest core release.
 
 ## 6.0.6
 
