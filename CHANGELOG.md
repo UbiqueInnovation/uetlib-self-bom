@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 6.0.7
+
+- Use shared Maven workflows at `v1.1.0`: wait for the SonarCloud quality gate and analyse with the
+  uetlib-only Sonar token.
+
 ## 6.0.6
 
 - `uetlib-inotify-java` updated to

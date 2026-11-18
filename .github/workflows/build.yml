@@ -9,11 +9,11 @@ jobs:
     name: Build Project
     permissions:
       contents: read
-    uses: UbiqueInnovation/uetlib/.github/workflows/mvn-install.yml@b68cc517848c43ba646b910a7e412a1c7b8752e8 # v1.0.0
+    uses: UbiqueInnovation/uetlib/.github/workflows/mvn-install.yml@f7294d1a69143d2dafbd830b9b1b93335d3e7e7a # v1.1.0
     with:
       sonar: true
     secrets:
-      SONAR_TOKEN: ${{ secrets.UBIQUE_SONAR_TOKEN }}
+      SONAR_TOKEN: ${{ secrets.UETLIB_SONAR_TOKEN }}
       UB_ARTIFACTORY_USER: ${{ secrets.UB_ARTIFACTORY_USER }}
       UB_ARTIFACTORY_PASSWORD: ${{ secrets.UB_ARTIFACTORY_PASSWORD }}
       UB_ARTIFACTORY_URL: ${{ secrets.UB_ARTIFACTORY_URL }}
@@ -29,29 +29,18 @@ jobs:
       fail-fast: false
       matrix:
         repository:
-          - uetlib-job-testapp
+          - uetlib-testapp
     steps:
       - name: Checkout uetlib-self-bom repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Prepare maven
-        uses: UbiqueInnovation/action-systems-mvn-prepare@bfeb86b8129a37da7d062487cc1dfb60718836cc # v2.0.0
+      - name: Set up Java
+        uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880 # v6.3.0
         with:
-          mvn_servers: >-
-            [
-              {
-                "id": "ubique-artifactory-virtual",
-                "username": "${{ secrets.UB_ARTIFACTORY_USER }}",
-                "password": "${{ secrets.UB_ARTIFACTORY_PASSWORD }}"
-              }
-            ]
-          mvn_repositories: >-
-            [
-              {
-                "id": "ubique-artifactory-virtual",
-                "url": "${{ secrets.UB_ARTIFACTORY_URL }}${{ secrets.UB_ARTIFACTORY_REPO_UBIQUE }}"
-              }
-            ]
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+          overwrite-settings: false
 
       - name: Create custom mvn repository settings.xml
         uses: s4u/maven-settings-action@4cfd36368400327fd45dcb28f190ae7b85533deb # v4.1.0
@@ -87,7 +76,7 @@ jobs:
         with:
           repository: UbiqueInnovation/${{ matrix.repository }}
           path: ${{ matrix.repository }}
-          token: ${{ secrets.WORKFLOW_PAT_GITHUB }}
+          persist-credentials: false
           ref: main
 
       - name: Update uetlib-self-bom version for ${{ matrix.repository }}
