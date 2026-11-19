@@ -2,8 +2,13 @@
 
 ## 6.0.7
 
+- Build pull requests, including forks, and pushes to `main` instead of every branch push; use shared Maven
+  workflows at `v1.1.1`.
 - Use shared Maven workflows at `v1.1.0`: wait for the SonarCloud quality gate and analyse with the
   uetlib-only Sonar token.
+- Use `uetlib-core` 3.0.4, the latest core release.
+- Use `uetlib-job` 6.0.7 and `uetlib-spring-boot` 4.0.4. The previous `uetlib-spring-boot` 4.0.3 was never
+  published to Central.
 
 ## 6.0.6
 
