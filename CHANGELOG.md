@@ -1,5 +1,41 @@
 # CHANGELOG
 
+## 6.1.0
+
+- `uetlib-core` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-core/blob/main/CHANGELOG.md#310) [Diff/3.0.4-3.1.0](https://github.com/UbiqueInnovation/uetlib-core/compare/v3.0.4...v3.1.0)
+- `uetlib-db` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-db/blob/main/CHANGELOG.md#310) [Diff/3.0.1-3.1.0](https://github.com/UbiqueInnovation/uetlib-db/compare/v3.0.1...v3.1.0)
+- `uetlib-errorprone` updated to
+  `1.0.0`: [Changelog/1.0.0](https://github.com/UbiqueInnovation/uetlib-errorprone/blob/main/CHANGELOG.md#100) [Diff/0.1.1-1.0.0](https://github.com/UbiqueInnovation/uetlib-errorprone/compare/v0.1.1...v1.0.0)
+- `uetlib-geo` updated to
+  `4.1.0`: [Changelog/4.1.0](https://github.com/UbiqueInnovation/uetlib-geo/blob/main/CHANGELOG.md#410) [Diff/4.0.3-4.1.0](https://github.com/UbiqueInnovation/uetlib-geo/compare/v4.0.3...v4.1.0)
+- `uetlib-inotify-java` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-inotify-java/blob/main/CHANGELOG.md#310) [Diff/3.0.3-3.1.0](https://github.com/UbiqueInnovation/uetlib-inotify-java/compare/v3.0.3...v3.1.0)
+- `uetlib-job` updated to
+  `6.1.0`: [Changelog/6.1.0](https://github.com/UbiqueInnovation/uetlib-job/blob/main/CHANGELOG.md#610) [Diff/6.0.7-6.1.0](https://github.com/UbiqueInnovation/uetlib-job/compare/v6.0.7...v6.1.0)
+- `uetlib-monitoring` updated to
+  `3.2.0`: [Changelog/3.2.0](https://github.com/UbiqueInnovation/uetlib-monitoring/blob/main/CHANGELOG.md#320) [Diff/3.0.2-3.2.0](https://github.com/UbiqueInnovation/uetlib-monitoring/compare/v3.0.2...v3.2.0)
+- `uetlib-payment` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-payment/blob/main/CHANGELOG.md#310) [Diff/3.0.2-3.1.0](https://github.com/UbiqueInnovation/uetlib-payment/compare/v3.0.2...v3.1.0)
+- `uetlib-spring-boot` updated to
+  `4.1.0`: [Changelog/4.1.0](https://github.com/UbiqueInnovation/uetlib-spring-boot/blob/main/CHANGELOG.md#410) [Diff/4.0.4-4.1.0](https://github.com/UbiqueInnovation/uetlib-spring-boot/compare/v4.0.4...v4.1.0)
+- `uetlib-spring-boot-test` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-spring-boot-test/blob/main/CHANGELOG.md#310) [Diff/3.0.1-3.1.0](https://github.com/UbiqueInnovation/uetlib-spring-boot-test/compare/v3.0.1...v3.1.0)
+- `uetlib-spring-cloud` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-spring-cloud/blob/main/CHANGELOG.md#310) [Diff/3.0.1-3.1.0](https://github.com/UbiqueInnovation/uetlib-spring-cloud/compare/v3.0.1...v3.1.0)
+- `uetlib-storage` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-storage/blob/main/CHANGELOG.md#310) [Diff/3.0.2-3.1.0](https://github.com/UbiqueInnovation/uetlib-storage/compare/v3.0.2...v3.1.0)
+- `uetlib-storage-spring-boot` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-storage-spring-boot/blob/main/CHANGELOG.md#310) [Diff/3.0.2-3.1.0](https://github.com/UbiqueInnovation/uetlib-storage-spring-boot/compare/v3.0.2...v3.1.0)
+- `uetlib-test` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-test/blob/main/CHANGELOG.md#310) [Diff/3.0.1-3.1.0](https://github.com/UbiqueInnovation/uetlib-test/compare/v3.0.1...v3.1.0)
+- `uetlib-testcontainers` updated to
+  `3.1.0`: [Changelog/3.1.0](https://github.com/UbiqueInnovation/uetlib-testcontainers/blob/main/CHANGELOG.md#310) [Diff/3.0.1-3.1.0](https://github.com/UbiqueInnovation/uetlib-testcontainers/compare/v3.0.1...v3.1.0)
+- `uetlib-webp` updated to
+  `1.1.0`: [Changelog/1.1.0](https://github.com/UbiqueInnovation/uetlib-webp/blob/main/CHANGELOG.md#110) [Diff/1.0.3-1.1.0](https://github.com/UbiqueInnovation/uetlib-webp/compare/v1.0.3...v1.1.0)
+- Updated dependencies and actions.
+
 ## 6.0.7
 
 - Build pull requests, including forks, and pushes to `main` instead of every branch push; use shared Maven
