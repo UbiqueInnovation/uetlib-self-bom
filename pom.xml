@@ -67,17 +67,17 @@
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-geo</artifactId>
-                <version>4.0.3</version>
+                <version>4.0.5</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-geo-db</artifactId>
-                <version>4.0.3</version>
+                <version>4.0.5</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-geo-job</artifactId>
-                <version>4.0.3</version>
+                <version>4.0.5</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
@@ -122,7 +122,7 @@
             <dependency>
                 <groupId>ch.uetlib</groupId>
                 <artifactId>uetlib-geo-spring-boot</artifactId>
-                <version>4.0.3</version>
+                <version>4.0.5</version>
             </dependency>
             <dependency>
                 <groupId>ch.uetlib</groupId>
